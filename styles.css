@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fce4ec;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.globe-icon {
+    font-size: 1.8em;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav a:hover, .main-nav a.active {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+.main-title h2 {
+    font-size: 2.5em;
+    color: #1a237e;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.carte {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.bienvenu-carte, .exploration-card {
+    background-color: #fce4ec;
+}
+
+.bienvenu-carte {
+    grid-column: 1 / 2;
+    min-height: 200px;
+}
+
+.maroc-carte {
+    grid-column: 2 / 3;
+    padding: 10px;
+}
+
+.maroc-carte img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.exploration-carte {
+    background-color: #fce4ec;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.article-carte {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: #fce4ec; 
+}
+
+.icon {
+    font-size: 2.5em;
+    color: #3f51b5;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #1a237e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3f51b5;
+}
+
+.main-footer {
+    background-color: #fce4ec;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    border-top: 1px solid #666;
+}
+
+.liens-footer a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.liens-footer a:hover {
+    text-decoration: underline;
+}

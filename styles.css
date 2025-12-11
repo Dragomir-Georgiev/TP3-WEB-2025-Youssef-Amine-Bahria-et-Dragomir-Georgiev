@@ -179,6 +179,15 @@ main {
 .page-title {
     display:none
 }
+.site-objectif {
+    background-color: #f0f8ff;
+    border: 1px solid #778899;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 785px;
+    text-align: center;
+}
 .carte-objectif {
     max-width: 800px;
     margin: 40px auto 60px auto;

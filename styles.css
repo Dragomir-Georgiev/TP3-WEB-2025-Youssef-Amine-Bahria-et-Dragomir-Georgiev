@@ -32,7 +32,7 @@ main {
     align-items: center;
     padding: 10px 40px;
     background-color: #fce4ec;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid black;
 }
 
 .logo {
@@ -62,7 +62,7 @@ main {
     padding: 8px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(86, 86, 86);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -90,8 +90,8 @@ main {
 
 .carte {
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid black ;
 }
 
 .bienvenu-carte, .exploration-card {
@@ -105,7 +105,7 @@ main {
 
 .maroc-carte {
     grid-column: 2 / 3;
-    padding: 10px;
+    padding: 0px;
 }
 
 .maroc-carte img {
@@ -163,7 +163,7 @@ main {
     justify-content: space-between;
     align-items: center;
     font-size: 0.9em;
-    border-top: 1px solid #666;
+    border-top: 1px solid black;
 }
 
 .liens-footer a {

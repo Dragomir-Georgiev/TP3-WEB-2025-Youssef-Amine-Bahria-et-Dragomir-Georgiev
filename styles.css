@@ -303,6 +303,14 @@ main {
     padding: 0; 
 }
 
+.carte-image-gauche{
+    height: 75%;
+}
+
+.carte-text-droite {
+    height: 75%;
+}
+
 .carte-text-gauche, .carte-text-droite {
     display: flex;
     flex-direction: column;

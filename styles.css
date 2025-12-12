@@ -303,18 +303,32 @@ main {
     padding: 0; 
 }
 
+.carte-image-droite {
+    margin-top: 20px;
+}
+
 .carte-image-gauche{
     height: 75%;
+    margin-top: 75px;
 }
 
 .carte-text-droite {
     height: 75%;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .carte-text-gauche, .carte-text-droite {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #fce4ec;
+    border: 1px solid #778899;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
 }
 
 .form-container {

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Mémo'Histoire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <span class="globe-icon">🌍</span>
+            <h1>Mémo'Histoire</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html" class="active">Inscription</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <form class="auth-form" action="#" method="POST" id="registrationForm">
+            <div class="form-group">
+                <label for="reg_username">Nom d'utilisateur</label>
+                <input type="text" id="reg_username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg_email">Email</label>
+                <input type="email" id="reg_email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reg_password">Mot de passe</label>
+                <div class="password-wrapper">
+                    <input type="password" id="reg_password" name="password" required>
+                    <i class="fas fa-eye toggle-password" id="reg_togglePassword">👁️</i>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">S'inscrire</button>
+
+            <p class="changer-page">
+                Tu as déjà un compte ? <a href="connexion.html">Connecte-toi</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 - Mémo'Histoire. All Rights Reserved.</p>
+        <div class="liens-footer">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+    
+    <script>
+        const form = document.getElementById('registrationForm');
+        const passwordField = document.getElementById('reg_password');
+        const toggleIcon = document.getElementById('reg_togglePassword');
+        const requiredFields = document.querySelectorAll('#registrationForm input[required]');
+
+        toggleIcon.addEventListener('click', function () {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            
+            if (type === 'text') {
+                toggleIcon.textContent = '🔒';
+            } else {
+                toggleIcon.textContent = '👁️';
+            }
+        });
+
+        form.addEventListener('submit', function(event) {
+            let isValid = true;
+            requiredFields.forEach(field => {
+                if (field.value.trim() === '') {
+                    isValid = false;
+                    field.style.borderColor = 'red';
+                } else {
+                    field.style.borderColor = '#ccc';
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault();
+                alert("Veuillez remplir tous les champs obligatoires avant de vous inscrire."); 
+            }
+        });
+        
+    </script>
+</body>
+</html>
